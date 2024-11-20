@@ -4,12 +4,60 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:MAUI_Pages"
-    Shell.FlyoutBehavior="Disabled"
     Title="MAUI_Pages">
+    
+    <!--
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <FlyoutItem Title="Mainpage">
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+    </FlyoutItem>
+    <FlyoutItem Title="Pagina 1">
+        <ShellContent
+        Title="Pagina1"
+        ContentTemplate="{DataTemplate local:Page1}"
+        Route="Pagina1" />
+    </FlyoutItem>
+    <FlyoutItem Title="Pagina 2">
+        <ShellContent
+    Title="Pagin21"
+    ContentTemplate="{DataTemplate local:Page2}"
+    Route="Pagina2" />
+    </FlyoutItem>
+    <FlyoutItem Title="Pagina 3">
+        <ShellContent
+    Title="Pagina3"
+    ContentTemplate="{DataTemplate local:Page3}"
+    Route="Pagina3" />
+    </FlyoutItem>
 
+    -->
+    <TabBar>
+        <Tab Title="Home" Icon="dotnet_bot.png">
+            <ShellContent
+                Title="Home"
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Route="MainPage" />
+        </Tab>
+        <Tab Title="Pagina 1" Icon="dotnet_bot.png">
+            <ShellContent
+                Title="Pagina1"
+                ContentTemplate="{DataTemplate local:Page1}"
+                Route="Pagina1" />
+        </Tab>
+        <Tab Title="Pagina 2" Icon="dotnet_bot.png">
+            <ShellContent
+                Title="Pagina2"
+                ContentTemplate="{DataTemplate local:Page2}"
+                Route="Pagina2" />
+        </Tab>
+        <Tab Title="Pagina 3" Icon="dotnet_bot.png">
+            <ShellContent
+                Title="Pagina3"
+                ContentTemplate="{DataTemplate local:Page3}"
+                Route="Pagina3" />
+        </Tab>
+    </TabBar>
 </Shell>
